@@ -244,6 +244,10 @@ function roundToNearestInteger(number) {
   return Math.round(number);
 }
 
+function isSafeInteger(number) {
+  return Number.isSafeInteger(number);
+}
+
 /**
  * Returns the integer part of a number (truncates fractional digits).
  */
@@ -309,7 +313,7 @@ module.exports = {
   isPowerOfTwo,
   getSine,
   numberToStringInBase,
-  isSafeInteger: Number.isSafeInteger,
+  isSafeInteger,
   roundToLargestInteger,
   roundToSmallestInteger,
   roundToNearestInteger,
